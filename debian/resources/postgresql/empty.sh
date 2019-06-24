@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #database settings
-db_host=127.0.0.1
+db_host=pgdb
 db_port=5432
 
 #move to script directory so all relative paths work
