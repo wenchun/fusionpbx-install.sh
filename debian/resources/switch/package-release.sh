@@ -43,7 +43,8 @@ apt-get install -y freeswitch-music-default
 apt-get install -y libyuv-dev
 
 #make sure that postgresql is started before starting freeswitch
-sed -i /lib/systemd/system/freeswitch.service -e s:'local-fs.target:local-fs.target postgresql.service:'
+#sed -i /lib/systemd/system/freeswitch.service -e s:'local-fs.target:local-fs.target postgresql.service:'
+sed -i /lib/systemd/system/freeswitch.service -e s:'local-fs.target:local-fs.target '
 
 #remove the music package to protect music on hold from package updates
 mkdir -p /usr/share/freeswitch/sounds/temp
