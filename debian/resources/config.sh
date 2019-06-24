@@ -1,8 +1,8 @@
 
 # FusionPBX Settings
-domain_name=ip_address          # hostname, ip_address or a custom value
-system_username=admin           # default username admin
-system_password=random          # random or a custom value
+domain_name=192.168.1.163          # hostname, ip_address or a custom value
+system_username=freeswitch             # default username admin
+system_password=admin@1234          # random or a custom value
 system_branch=master            # master, stable
 
 # FreeSWITCH Settings
@@ -13,10 +13,10 @@ switch_version=1.8.4            # only for source
 switch_tls=true                 # true or false
 
 # Database Settings
-database_password=random        # random or a custom value (safe characters A-Z, a-z, 0-9)
+database_password=admin@1234        # random or a custom value (safe characters A-Z, a-z, 0-9)
 database_repo=official          # PostgreSQL official, system, 2ndquadrant
 database_version=latest         # requires repo official
-database_host=127.0.0.1         # hostname or IP address
+database_host=192.168.1.22         # hostname or IP address
 database_port=5432              # port number
 database_backup=false           # true or false
 
